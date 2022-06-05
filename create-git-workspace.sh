@@ -7,3 +7,6 @@ echo "===== Git config ====="
 git config --global user.name "Greg"
 git config --global user.email "com@ccgr.fr"
 git config --global color.ui true
+
+echo ">>>>>>> fin de $0"
+
