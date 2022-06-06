@@ -5,6 +5,6 @@ Liste des scripts:
 	
 Liste des acteurs:
 	* OrdiAlien entre dans la course avec sa PR
-  * grosOrdi entre dans la course avec sa PR
+    * grosOrdi entre dans la course avec sa PR
 
 ===== Ligne de fin du readme.txt =====
