@@ -4,8 +4,8 @@ echo "===== Git Init ====="
 git init
 
 echo "===== Git config ====="
-git config --global user.name "Greg"
-git config --global user.email "com@ccgr.fr"
+git config --global user.name "grosOrdi"
+git config --global user.email "grosOrdi@ccgr.fr"
 git config --global color.ui true
 
 echo ">>>>>>> fin de $0"
