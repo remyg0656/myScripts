@@ -5,8 +5,8 @@ Liste des scripts:
 
 Liste des acteurs:
 	* OrdiAlien entre dans la course avec sa PR
-  * grosOrdi entre dans la course avec sa PR
-  * petitClevo essaie de rentrer dans la course
+	* grosOrdi entre dans la course avec sa PR
+	* petitClevo essaie de rentrer dans la course
 
 Option:
 	PetitClevo aime les .vscode
