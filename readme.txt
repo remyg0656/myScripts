@@ -3,6 +3,8 @@ C'est ici qu'on va rajouter les trucs a faire
 Liste des scripts:
 	* create-git-workpsace.sh
 	* grosOrdi.sh
+	* unix2dos.bat
+	* dos2unix.bat
 
 Liste des acteurs:
 	* OrdiAlien entre dans la course avec sa PR
