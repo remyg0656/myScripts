@@ -11,5 +11,6 @@ Liste des acteurs:
 
 Option:
 	PetitClevo aime les .vscode
+	rosOrdi n'aime pas le .vscode
 
 ===== Ligne de fin du readme.txt =====
