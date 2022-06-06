@@ -13,12 +13,6 @@ Liste des acteurs:
 	* OrdiAlien semble mort et ordiAlien est create
 
 Option:
-<<<<<<< HEAD
 	PetitClevo aime les .vscode
 
-=======
-	petitClevo aime les .vscode
-	grosOrdi n'aime pas le .vscode
-	
->>>>>>> 824043a (rien de special)
 ===== Ligne de fin du readme.txt =====
