@@ -20,6 +20,6 @@ echo "===== Rajout des alias ====="
 git config --global core.editor emacs
 
 echo "===== Config de l'editeur ====="
-git config --global core.editor "C:\Program Files (x86)\Microsoft VS Code\Code.exe"
+git config --global core.editor "'C:/Program Files (x86)/Microsoft VS Code/Code.exe'"
  
 echo ">>>>>>> fin de $0"
