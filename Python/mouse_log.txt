@@ -1,0 +1,3 @@
+ La connaissance des logiciels de gestion de sources (Git de préférence), de gestion de la qualité du code tels que SonarQube, de gestion des Artefacts tels que Artifactory sera un plus. 
+
+Vous maitrisez un de ces outils et les différents domaines ALM associés : Backlog, Source Code et Pipelines de Build / Release.
