@@ -1,9 +1,9 @@
 import mouse
-#import time
+import time
 from time import sleep
 import threading
 
-https://www.geeksforgeeks.org/python-different-ways-to-kill-a-thread/
+#https://www.geeksforgeeks.org/python-different-ways-to-kill-a-thread/
 
 #from tkinter import *
 import tkinter
@@ -21,7 +21,7 @@ def change_button_text():
     global button
     global t1
     print("Enter change_button_text")
-    print("Number of thread: ",  t1.ac)
+    print("Number of thread: ",  t1)
     if(button.cget('text') == "START"):
         button.config(text="STOP")
         isStarted = 1
@@ -64,6 +64,7 @@ gui.geometry("120x50+0+0")
 button = tkinter.Button(
     gui,
     text=myText,
+    activebackground="green",
     command=my_thread
 )
 button.place(bordermode="inside" ,height=my_x, width=my_y)

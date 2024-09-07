@@ -7,7 +7,7 @@ from threading import *
 root = Tk()
 
 # Set geometry
-root.geometry("400x400")
+root.geometry("200x50")
 
 
 def work():

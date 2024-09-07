@@ -20,7 +20,7 @@ gui.geometry("120x50+0+0")
 start_btn = tkinter.Button(gui,text="Start",command=start_thread)
 start_btn.pack()
 stop_btn = tkinter.Button(gui,text="Stop",command=start_thread)
-#stop_btn.pack()
+stop_btn.pack()
 
 gui.mainloop()
 exit(0)
