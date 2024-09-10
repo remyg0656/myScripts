@@ -4,6 +4,8 @@ from time import sleep
 #from threading import Thread
 import threading
 from queue import Queue
+import multiprocessing
+
 
 
 class StoppableThread(threading.Thread):
@@ -15,21 +17,24 @@ class StoppableThread(threading.Thread):
         self._stop_event = threading.Event()
 
     def stop(self):
-        self._stop_event.set()
-
+        if self.is_alive():
+            print("Ptin je suis en  vie")
+            self._stop_event.set(self)
+            
     def stopped(self):
         return self._stop_event.is_set()
     
 
 class MainWindow(tk.Tk):
+    proc = multiprocessing.Process(target=self.move_process,
+                                       daemon=True)
     def __init__(self):
         super().__init__()
         self.geometry("120x50+0+0")
         self.queue_message = Queue()
         self.create_frame_button().pack(expand=True)
-#        self.bind("<<CheckQueue>>", self.check_queue)
-
-
+#       self.bind("<<CheckQueue>>", self.check_queue)
+    
     def create_frame_button(self) -> ttk.Frame:
         self.frame_buttons = ttk.Frame(self)
         self.style_start = ttk.Style()
@@ -49,17 +54,22 @@ class MainWindow(tk.Tk):
 
 
     def on_start_button_clicked(self):
-        print("Enter on_start_button_clicked")
+        print("Enter on_start_button_clicked => val:", self.start_button.cget('text'))
 
-        if StoppableThread.stopped:
-            print("===>>Syntaxe error")
-            #StoppableThread.stop()
+#        if StoppableThread.stopped:
+#            print("===>>Syntaxe error")
+#            StoppableThread.stop(self)
 
-        new_thread = StoppableThread(target=self.move_process, 
-                    args=(), 
-                    daemon=True)
-        new_thread.start()
-        print("Nbre de thread: ", new_thread)
+#        new_thread = StoppableThread(target=self.move_process, 
+#                    args=(), 
+#                    daemon=True)
+#        new_thread.start()
+#        print("Nbre de thread: ", new_thread)
+        
+        proc = multiprocessing.Process(target=self.move_process,
+                                       daemon=True)
+        
+        proc.start()
         print("Exit  on_start_button_clicked")
 
 
