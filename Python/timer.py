@@ -2,6 +2,7 @@ import tkinter as tk
 import time
 from datetime import datetime
 
+counter = 82800
 class Timer():
     def __init__(self):
         self.root = tk.Tk()
@@ -11,12 +12,10 @@ class Timer():
         self.root.mainloop()
 
     def updateClock(self):
-#        now = time.gmtime(0)
-        counter = 82600
+        global counter
+        counter = counter + 1
         tt = datetime.fromtimestamp(counter)
-        print(tt)
         now = tt.strftime("%H:%M:%S")
-
         self.label.configure(text = now)
         self.root.after(1000, self.updateClock)
 
