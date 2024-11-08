@@ -71,7 +71,8 @@ choice2()
 	echo "	=> Tenant selected: $tenant"
 	echo ""
 
-	_basicCheck()
+	_basicCheck
+
 
 	cmd="ssh $environment-$machine.truc-$tenant.$site.fr"
 	echo "   ==> Run command: $cmd <== "
@@ -83,3 +84,5 @@ choice2()
 
 	exit 0
 }
+
+choice2

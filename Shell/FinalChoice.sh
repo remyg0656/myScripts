@@ -47,7 +47,7 @@ _basicCheck()
         return 0
 }
 
-zs2sshHP()
+main()
 {
         echo "================================================"
         echo "=========    Start ~/bin/FinalChoice.sh   ======"
@@ -87,3 +87,5 @@ zs2sshHP()
 
         return 0
 }
+
+main
