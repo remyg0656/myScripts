@@ -1,0 +1,17 @@
+#Ignore les fichiers log et temp
+*.log
+#tous les *.log sont exlus sauf example.log 
+!example.log 
+
+#out?.log veut dire out1.log, out2.log ...
+
+*.tmp
+log.txt
+*.spec
+
+#ignore les repertoires de compilation
+#/build
+**/build/**
+# flingue tout ce qu'il y a dans /dist/
+**/dist/** 
+
